@@ -43,7 +43,7 @@
                                die ("Handle File Type Not Allowed");
                            }
                            $tmpFile = $_FILES[InputKey]['tmp_name'];
-                           $dstFile = 'Uploads/'.$_FILES[InputKey]['name'];
+                           $dstFile = 'Uploads/Programmes.xml';
                            if (!move_uploaded_file ($tmpFile, $dstFile)) {
                                die ("Handle Error"); 
                            }        

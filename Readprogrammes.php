@@ -1,6 +1,13 @@
 <?php 
 
-$xmlNodes=simplexml_load_file ("Uploads/Programmes.xml");
+$filename="Uploads/Programmes.xml";
+
+if (!file_exists($filename)){
+    echo "Please upload a file before filtering";
+    die();
+}
+    
+$xmlNodes=simplexml_load_file ($filename);
 $format="£%0.2f\n";
 
 $zenresult =$_GET['zen'];
