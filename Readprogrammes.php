@@ -8,6 +8,11 @@ $happyresult=$_GET['happy'];
 $awakenessresult=$_GET['awakeness'];
 $fearresult=$_GET['fear'];
 
+echo $zenresult;
+echo $happyresult;
+echo $awakenessresult;
+echo$fearresult;
+
 if ($zenresult>50) {$zenresult="Calm";}
 else {$zenresult="Agitated";
 }
@@ -23,24 +28,21 @@ else {$awakenessresult="Tired";
 }
 
 if ($fearresult>50) {
-$fearresult="Scared";}
-else {$fearresult="Fearless";
+$fearresult="Fearless";}
+else {$fearresult="Scared";
 }
 
-
-      
       ?>
         <div class="container">
-            <div class="row">
+            <div class="row justify-content-center">
                 <?php foreach($xmlNodes as $programme) {?>
-                <?php if ($zenresult || $happyresult || $awaknessresult || $fearresult==$programme->mood) { ?>
-                    <div class="col">
+                <?php if ($zenresult==$programme->mood || $happyresult==$programme->mood || $awakenessresult==$programme->mood || $fearresult==$programme->mood) { ?>
+                    <div class="col-2">
                         <div class='card'> 
                             <img class="card-img-top" img src=" <?php echo $programme->imagepath; ?> ">
                                     <div class="card-body">
-                                        <div class="card text-center">
-                                            <h2><?php echo $programme->name;?></h2>
-                                        </div>
+                                            <p><?php echo $programme->name;?></p>
+                                       
                                     </div>
                         </div>
                     </div>

@@ -28,13 +28,10 @@
                                 <input type="submit" name="send"/>
                                 <input type="hidden"name="MAX_FILE_SIZE"value="10000000"/>
                             </form>
-                        </div>
-
-                           
-                    <div class="text-danger h2">
-                       <?php                  
+                       
+                        <?php                  
                            const InputKey= 'myfile';
-                           const AllowedTypes = ['text/xml', 'image/jpeg', 'image/jpg'];
+                           const AllowedTypes = ['text/xml'];
                            if (empty($_FILES[InputKey])){
                                die("File Missing!");
                            }
@@ -54,7 +51,41 @@
                            }
                          ?>   
                         </div>
-        </div> 
+
+                        <div>
+                            <form action="Programmeupload.php" method="post" enctype="multipart/form-data">
+                                Select an image to upload:
+                                <input type="file" name="myimage" id="imageToUpload"/>
+                                <input type="submit" name="send"/>
+                                <input type="hidden"name="MAX_FILE_SIZE"value="10000000"/>
+                            </form>
+                            
+                        <?php                  
+                           const InputKey= 'myimage';
+                           const AllowedTypes = ['image/jpeg', 'image/jpg'];
+                           if (empty($_FILES[InputKey])){
+                               die("File Missing!");
+                           }
+                           if($_FILES[InputKey]['error']>0){
+                               die ("Handle the error!");
+                           }
+                           if (!in_array ($_FILES[InputKey]['type'], AllowedTypes)){
+                               die ("Handle File Type Not Allowed");
+                           }
+                           $tmpFile = $_FILES[InputKey]['tmp_name'];
+                           $dstFile = 'images/'.$_FILES[InputKey]['name'];
+                           if (!move_uploaded_file ($tmpFile, $dstFile)) {
+                               die ("Handle Error"); 
+                           }        
+                           if (file_exists($dstFile)){
+                               echo "Successful upload";
+                           }
+                        ?> 
+                            
+                        </div>
+                </div> 
+        </div>
+        </div>        
     </body>
  </html>
 <?php

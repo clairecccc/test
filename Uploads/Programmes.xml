@@ -16,13 +16,13 @@
     <programme id="3">
         <name>Clueless</name>
         <imagepath>images/Clueless.jpeg</imagepath> 
-        <mood>Sad</mood>
+        <mood>Happy</mood>
     </programme>
     
     <programme id="4">
         <name>Mad Max</name>
         <imagepath>images/Max.jpeg</imagepath> 
-        <mood>Calm</mood>
+        <mood>Fearless</mood>
     </programme>
     
     <programme id="5">
@@ -40,7 +40,7 @@
     <programme id="7">
         <name>Happy Feet</name>
         <imagepath>images/Happyfeet.jpeg</imagepath> 
-        <mood>Sad</mood>
+        <mood>Happy</mood>
     </programme>
     
     <programme id="8">
@@ -54,6 +54,13 @@
         <imagepath>images/It.jpeg</imagepath> 
         <mood>Fearless</mood>
     </programme>
+    
+    <programme id="9">
+        <name>Boy in the striped pjamas</name>
+        <imagepath>images/boyinstripedpyjamas.jpeg</imagepath> 
+        <mood>Sad</mood>
+    </programme>
+
 
 </programmedata>
 
