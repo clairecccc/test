@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<programmedata>
+
+    <programme id="1">
+        <name>A nightmare on Elm Street</name>
+        <imagepath>./images/ElmStreet.jpeg</imagepath> 
+        <mood>Scared</mood>
+    </programme>
+    
+    <programme id="2">
+        <name>School of Rock</name>
+        <imagepath>./images/School.jpeg</imagepath> 
+        <mood>Happy</mood>
+    </programme>
+
+    <programme id="3">
+        <name>Clueless</name>
+        <imagepath>./images/Clueless.jpeg</imagepath> 
+        <mood>Sad</mood>
+    </programme>
+    
+    <programme id="4">
+        <name>Mad Max</name>
+        <imagepath>./images/Max.jpeg</imagepath> 
+        <mood>Wide Awake</mood>
+    </programme>
+    
+    <programme id="5">
+        <name>Atlanta</name>
+        <imagepath>./images/Atlanta.jpeg</imagepath> 
+        <mood>Tired</mood>
+    </programme>
+    
+     <programme id="6">
+        <name>Whale Rider</name>
+        <imagepath>./images/WhaleRider.jpeg</imagepath> 
+        <mood>Calm</mood>
+    </programme>
+
+    <programme id="7">
+        <name>Happy Feet</name>
+        <imagepath>./images/Happyfeet.jpeg</imagepath> 
+        <mood>Sad</mood>
+    </programme>
+    
+    <programme id="8">
+        <name>Halloween</name>
+        <imagepath>./images/Halloween.jpeg</imagepath> 
+        <mood>Fearless</mood>
+    </programme>
+
+    <programme id="8">
+        <name>It</name>
+        <imagepath>./images/It.jpeg</imagepath> 
+        <mood>Fearless</mood>
+    </programme>
+
+</programmedata>
+
+
