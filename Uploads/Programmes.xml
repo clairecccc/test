@@ -22,7 +22,7 @@
     <programme id="4">
         <name>Mad Max</name>
         <imagepath>images/Max.jpeg</imagepath> 
-        <mood>Wide Awake</mood>
+        <mood>Calm</mood>
     </programme>
     
     <programme id="5">

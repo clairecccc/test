@@ -6,19 +6,21 @@ $format="£%0.2f\n";
 $zenresult =$_GET['zen'];
 $mood=$zenresult;
 
-//if ($zenresult>50) $mood=calm;
-//else $mood=agitated;
-//echo $mood;
+if ($zenresult>50) {$mood="Calm";}
+else {$mood="agitated";}
+echo $mood;
 
 
-if ($zenresult > 50) {
-    
-  foreach($xmlNodes as $programme) { 
+
       
       ?>
         <div class="container">
             <div class="row">
                 <?php foreach($xmlNodes as $programme) {?>
+                
+                <?php if ($mood==$programme->mood) { ?>
+                
+                
                     <div class="col">
                         <div class='card'> 
                             <img class="card-img-top" img src=" <?php echo $programme->imagepath; ?> ">
@@ -29,9 +31,11 @@ if ($zenresult > 50) {
                                     </div>
                         </div>
                     </div>
-                <?php  }?>                       
+                <?php }?>      
+                        
+                <?php }?>                       
             </div>
         </div>
     
-   <?php }  ?>
-   <?php }  ?>	
+   
+	
