@@ -12,8 +12,9 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>         
         <link rel="stylesheet" type="text/css" href="Test.css"> 
     </header>
-       
+        
     <body>
+        <?php require 'header.php';?>  
         <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-8 col-lg-6 jumbotron center">
@@ -48,6 +49,9 @@
                            }        
                            if (file_exists($dstFile)){
                                echo "Successful upload";
+                               
+                            header("location:Moodsliderpage.php");
+                            exit;
                            }
                          ?>   
                         </div>
@@ -56,7 +60,8 @@
                         </div>
                 </div> 
         </div>
-        </div>        
+        </div> 
+        <?php require 'footer.php';?> 
     </body>
  </html>
 
