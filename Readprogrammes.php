@@ -8,11 +8,6 @@ $happyresult=$_GET['happy'];
 $awakenessresult=$_GET['awakeness'];
 $fearresult=$_GET['fear'];
 
-echo $zenresult;
-echo $happyresult;
-echo $awakenessresult;
-echo$fearresult;
-
 if ($zenresult>50) {$zenresult="Calm";}
 else {$zenresult="Agitated";
 }

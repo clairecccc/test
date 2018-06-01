@@ -14,20 +14,23 @@
 <body> 
     <div class="container">
         <div class="row">
-                <div class="col-3">
-                    <img src="images/skylogo.jpeg" class="img" alt="Sky Logo">
+            <div class="col-4">
+                <img src="images/skylogo.jpeg" class="img" alt="Sky Logo">
+            </div>
+
+            <div class="col-8 p-1">
+                <div class="header my-2">
+                    Pick programmes for your mood
                 </div>
-                <div class="header">        
-                    <div class="col-9">
-                        <div class="p-5">
-                            Pick programmes for your mood
-                            <div class=my-4>
-                        </div>
-                    </div>           
-                        <a href=Programmeupload.php><h3>Upload Programme information</h3></a>
-                        </div>
-                    </div>
+                <div class= "my-5">
+                </div>
                 
+                <div class="header my-2">
+                    <a href=Programmeupload.php><h3>Upload Programme information</h3></a>
+                </div>
+            </div>           
+
+            
         </div>
     </div> 
     
