@@ -19,14 +19,20 @@
               <div class="col-4">
                     <img src="images/skylogo.jpeg" class="img" alt="Sky Logo">
               </div>
-             <div class="col-8">
-                <h1>Programme recommendations for you</h1>
-                <a href=Programmeupload.php><h3>Upload Programme information</h3></a>
-             </div> 
+             
+            <div class="col-8">
+                 <div class="m-5 pb-5">
+                    
+                        <h1>Programme recommendations for you</h1>
+                             <a href=Programmeupload.php><h3>Upload Programme information</h3></a>
+                 </div>
+            </div> 
 
         </div>
     </div>
     
+    
+    <div class ="jumboton">
         <div class="slidecontainer">
             <div class="row">
                 <div class="col">
@@ -81,7 +87,8 @@
                     <h4>Fearless</h4>
                 </div>
             </div>
-   </div>             
+   </div>     
+</div>        
            
     <div id="result">
         <div class="container">
