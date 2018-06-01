@@ -47,7 +47,7 @@
                     <h4>Sad</h4>         
                 </div>
                 <div class="col">
-                <input type="range" min="1" max="100" value="50" class="slider" id="Happy">
+                <input type="range" min="1" max="100" value="50" class="slider" id="happy" onchange="filter();" >
                 </div>
                 <div class="col">
                     <h4>Happy</h4>
@@ -61,7 +61,7 @@
                     <h4>Tired</h4>         
                 </div>
                 <div class="col">
-                <input type="range" min="1" max="100" value="50" class="slider" id="Awakeness">
+                <input type="range" min="1" max="100" value="50" class="slider" id="awakeness" onchange="filter();">
                 </div>
                 <div class="col">
                     <h4>Wide Awake</h4>
@@ -75,7 +75,7 @@
                     <h4>Scared</h4>         
                 </div>
                 <div class="col">
-                <input type="range" min="1" max="100" value="50" class="slider" id="Fear">
+                <input type="range" min="1" max="100" value="50" class="slider" id="fear"onchange="filter();">
                 </div>
                 <div class="col">
                     <h4>Fearless</h4>
@@ -160,7 +160,7 @@
             xhttp.send();   
         }
     </script> 
-    
+     
    
     
 </body>

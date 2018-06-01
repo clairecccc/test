@@ -3,42 +3,43 @@
 $xmlNodes=simplexml_load_file ("Uploads/Programmes.xml");
 $format="£%0.2f\n";
 
+$zenresult =$_GET['zen'];
 
-$result = $_GET['zen'];
-
-echo $result;
+//$happyresult =$_GET['happy'];
+//
+//$awakenessresult =$_GET['awakeness'];
+//
+//$fearresult =$_GET['fear'];
+//
+//echo $zenresult;
+//echo $happyresult;
+//echo $awakenessresult;
+//echo $fearresult;
 
 //if ($result > 50) {
 //echo"yeah";}
 //    else {echo "no";}
     
-if ($result > 50) {
+if ($zenresult > 50) {
 $mood="calm";}
     else {$mood="Agitated";}
     
 echo $mood;
     
-
+            
+            
+            
+if($mood="calm")     {
+    foreach ($xmlNodes as $programme) {
+        echo $programme->name;
+        
+    };
 ?>
 
 
-<!--
-function gameinput($Input) {
-    
-    if($Input === "R" || $Input === "r" || $Input === 0) {
-        return "Rock";
-    }
 
-    if($Input === "P" || $Input === "p" ||  $Input === 1){
-        return "Paper";
-    }
-    
-    if($Input === "S" || $Input === "s" || $Input === 2){
-        return "Scissors";
-    }  
-}-->
 
-    <div class="container">
+<    <div class="container">
         <div class="row">
                 <?php foreach($xmlNodes as $programme) {?>
                     <div class="col">
@@ -50,7 +51,7 @@ function gameinput($Input) {
                                         </div>
                                     </div>
                         </div>
-            </div>
+                    </div>
             
                 <?php  }?>                       
         </div>
