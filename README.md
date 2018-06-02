@@ -11,6 +11,7 @@
 - header.php and footer.php are required into both files above
 - Readprogrammes.php returns filtered results to Moodsliderpage.php with ajax
 - CSS file for whole project
+- XML file with example data to upload
 
 ## Additional features to add/consider in backlog
 - making responsive for use on other devices and browsers
